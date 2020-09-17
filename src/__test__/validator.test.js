@@ -27,7 +27,7 @@ describe('validator', () => {
     validator({ method: 'DELETE' }, {}, next)
     expect(next).toHaveBeenCalledWith(new APIError(400, errors.isBody))
 
-    validator({ body: { orignal_book: 'book' }, method: 'PATCH' }, {}, next)
+    validator({ body: { original_book: 'book' }, method: 'PATCH' }, {}, next)
     expect(next).toHaveBeenCalledWith(new APIError(400, errors.invalidBook))
   })
 })
