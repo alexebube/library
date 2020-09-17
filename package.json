@@ -1,0 +1,35 @@
+{
+  "name": "codechallenge",
+  "version": "1.0.0",
+  "description": "code challenge virtual library",
+  "main": "src/server.js",
+  "scripts": {
+    "lint": "npx standard --fix",
+    "start": "nodemon src/server.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "express",
+    "api"
+  ],
+  "author": "Alexander Obi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4",
+    "standard": "^14.3.4",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}
